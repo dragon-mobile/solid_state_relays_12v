@@ -1,14 +1,13 @@
-# picow_ssr_control
+# Solid State Relays - 12Volts
 [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-v2.0%20adopted-ff69b4.svg)](CODE_OF_CONDUCT.md)
 ![GitHub](https://img.shields.io/static/v1?label=license&message=CERN-OHL-W-2.0%20%2F%20MIT%20%2F%20CC-BY-SA-4.0&color=orange)<br/>
-![GitHub](https://img.shields.io/github/issues/dragon-mobile/picow_ssr_control)
+![GitHub](https://img.shields.io/github/issues/dragon-mobile/)
 ![GitHub](https://img.shields.io/github/v/release/dragon-mobile/picow_ssr_control)
 ![GitHub](https://img.shields.io/github/release-date/dragon-mobile/picow_ssr_control)
 ![GitHub](https://img.shields.io/github/last-commit/dragon-mobile/picow_ssr_control)<br/>
 
-The Raspberry Pi Pico W Solid State Relay Controller is primarily meant to be
-used with an open hardware solid state relay PCB that is being co-developed
-alongside this project as part of my Dragon Mobile GitHub organization to make
+The Solid State Relays - 12Volts is one of the open hardware solid state relay
+PCB of my Dragon Mobile GitHub organization with a goal to make
 useful hardware with associated firmware and software for the tiny home, van
 life and maker communities.
 
