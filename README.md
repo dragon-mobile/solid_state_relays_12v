@@ -2,8 +2,6 @@
 [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-v2.0%20adopted-ff69b4.svg)](CODE_OF_CONDUCT.md)
 ![GitHub](https://img.shields.io/static/v1?label=license&message=CERN-OHL-W-2.0%20%2F%20MIT%20%2F%20CC-BY-SA-4.0&color=orange)<br/>
 ![GitHub](https://img.shields.io/github/issues/dragon-mobile/solid_state_relays_12v)
-![GitHub](https://img.shields.io/github/v/release/dragon-mobile/solid_state_relays_12v)
-![GitHub](https://img.shields.io/github/release-date/dragon-mobile/solid_state_relays_12v)
 ![GitHub](https://img.shields.io/github/last-commit/dragon-mobile/solid_state_relays_12v)<br/>
 
 The Solid State Relays - 12Volts is one of the open hardware solid state relay
