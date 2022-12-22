@@ -33,9 +33,9 @@
         "other_text_thickness": 0.15,
         "other_text_upright": false,
         "pads": {
-          "drill": 2.7,
-          "height": 4.05,
-          "width": 4.05
+          "drill": 0.0,
+          "height": 0.5,
+          "width": 0.5
         },
         "silk_line_width": 0.15,
         "silk_text_italic": false,
@@ -103,9 +103,9 @@
         "allow_blind_buried_vias": false,
         "allow_microvias": false,
         "max_error": 0.005,
-        "min_clearance": 0.19999999999999998,
+        "min_clearance": 0.18,
         "min_copper_edge_clearance": 0.0,
-        "min_hole_clearance": 0.19999999999999998,
+        "min_hole_clearance": 0.18,
         "min_hole_to_hole": 0.25,
         "min_microvia_diameter": 0.19999999999999998,
         "min_microvia_drill": 0.09999999999999999,
@@ -139,9 +139,7 @@
     "equivalence_files": []
   },
   "erc": {
-    "erc_exclusions": [
-      "lib_symbol_issues|228600|457200|9b244382-dad0-4d51-8208-d6b7bfdcb4f6|00000000-0000-0000-0000-000000000000"
-    ],
+    "erc_exclusions": [],
     "meta": {
       "version": 0
     },
@@ -357,7 +355,7 @@
     "classes": [
       {
         "bus_width": 11.811023622047244,
-        "clearance": 0.2,
+        "clearance": 0.18,
         "diff_pair_gap": 0.25,
         "diff_pair_via_gap": 0.25,
         "diff_pair_width": 0.2,
@@ -374,7 +372,7 @@
       },
       {
         "bus_width": 11.811023622047244,
-        "clearance": 0.2,
+        "clearance": 0.18,
         "diff_pair_gap": 0.25,
         "diff_pair_via_gap": 0.25,
         "diff_pair_width": 0.2,
@@ -392,7 +390,7 @@
       },
       {
         "bus_width": 29.52755905511811,
-        "clearance": 0.2,
+        "clearance": 0.18,
         "diff_pair_gap": 0.25,
         "diff_pair_via_gap": 0.25,
         "diff_pair_width": 0.2,
@@ -601,7 +599,7 @@
       },
       {
         "bus_width": 29.52755905511811,
-        "clearance": 0.2,
+        "clearance": 0.18,
         "diff_pair_gap": 0.25,
         "diff_pair_via_gap": 0.25,
         "diff_pair_width": 0.2,
@@ -621,7 +619,7 @@
       },
       {
         "bus_width": 11.811023622047244,
-        "clearance": 0.2,
+        "clearance": 0.18,
         "diff_pair_gap": 0.25,
         "diff_pair_via_gap": 0.25,
         "diff_pair_width": 0.2,
@@ -654,10 +652,10 @@
   "pcbnew": {
     "last_paths": {
       "gencad": "",
-      "idf": "",
+      "idf": "solid_state_relays_12v.emn",
       "netlist": "",
       "specctra_dsn": "",
-      "step": "",
+      "step": "solid_state_relays_12v.step",
       "vrml": ""
     },
     "page_layout_descr_file": ""
