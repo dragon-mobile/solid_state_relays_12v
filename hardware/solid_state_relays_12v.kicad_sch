@@ -6,7 +6,7 @@
 
   (title_block
     (title "Solid State Relays 12V")
-    (date "2022-12-22")
+    (date "2023-01-04")
     (rev "0.0.7")
     (comment 2 "creativecommons.org/licenses/by/4.0/")
     (comment 3 "License: CC By 4.0")
@@ -3775,11 +3775,12 @@
     )
   )
 
-  (text "MOSFET Mounting Holes/Access" (at 15.24 128.27 0)
+  (text "MOSFET Mounting Access Holes" (at 15.24 128.27 0)
     (effects (font (size 2 2) bold) (justify left bottom))
     (uuid 0ba547c5-7be9-43d9-9462-caaac174d3c4)
   )
-  (text "Control inputs are active LOW /\nopen collector" (at 17.78 117.094 0)
+  (text "Control inputs are active LOW /\nopen drain (collector)"
+    (at 17.78 117.094 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 0dc94c0b-1984-4506-bbb3-ca4fdde57508)
   )
