@@ -9,6 +9,50 @@ PCB of my Dragon Mobile GitHub organization with a goal to make
 useful hardware with associated firmware and software for the tiny home, van
 life and maker communities.
 
+## Description
+
+The board consist of three main electronic sections: Power In,
+Control In / Power Out,
+and the Solid State Relays which are divided into two banks of four output
+channels.
+There are two mechanical sections as well: Mounting Holes, and the
+eight MOSFET Mounting Access Holes.
+
+### Power In
+
+The main 12 volt power source for the rest of the board enters via the
+JPWR1 and optional JPWR2 XT-60PW-M connectors. Each is rated for up to 35A but
+may support 40-50A loads for brief periods in practice with good cooling.
+Care should be taken to not connect or disconnect the power when any outputs
+are active as this may cause some arcing within the connector which will
+shorten its life span. This will be especially noticable with large inductive
+loads.
+
+The two Transient-Voltage-Suppression (TVS) diodes: TVSP1 and optional TVSP2
+provide protection against high voltage spikes from entering the board through
+the power source. Additionally they can act as reverse polarity protection by
+shorting the incorrectly wiring source and blow its fuse. Care should be taken
+to ensure the 12 volt wire is properly fused.
+
+The final part of the Power In section is the highly recommended but optional
+power applied/on LED circuit. The LEDP1 should light up any time power is
+connected to the board to give a quick visual indicator. Optionally the onboard
+LED can be replaced by connecting an external LED via the optional JP2 pin
+header. Connecting both LEDP1 and an external LED is not recommended.
+By cutting the trace between the pads of JP1 the indicator circuit can be
+disabled. Additionally by doing this and soldering two leads to the pads an
+external switch could be used to turn the indicator on and off as needed.
+
+#### Optional components
+
+The board is design to supply 30-40A across all outputs without the addition
+of JPWR2 and TVSP2 to save costs. For higher currents both the additional
+connector and TVS should be used. It is also recommended you increase the
+board copper plating to 3oz (105μm). An alternative but not recommended and
+more risky way to increase current capacity is by soldering some point to point
+jumper wires from near the power connectors and the center lead of the output
+FETs and from the output of the FETs to the leads of the output connectors.
+
 ## Contributing
 
 Contributors are welcome.
