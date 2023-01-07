@@ -9,6 +9,11 @@ PCB of my Dragon Mobile GitHub organization with a goal to make
 useful hardware with associated firmware and software for the tiny home, van
 life and maker communities.
 
+## Visual 3D examples
+
+![Top view 3D rendering of the circuit board in FreeCAD](docs/solid_state_relays_12v.png "Circuit board top view")<br/>
+![Bottom view 3D rendering of the circuit board in FreeCAD](docs/solid_state_relays_12v_back.png "Circuit board bottom view")<br/>
+
 ## Description
 
 The board consist of three main electronic sections: Power In,
@@ -53,6 +58,38 @@ more risky way to increase current capacity is by soldering some point to point
 jumper wires from near the power connectors and the center lead of the output
 FETs and from the output of the FETs to the leads of the output connectors.
 
+### Control In / Power Out
+
+This section provides the connectors JCNTL1 and JCNTL2 which interfaces the
+control signals from the external circuits to the output FETs.
+The external controls should be either electronic open drain (collector) or
+mechanical switches which pull their output to ground when active.
+The external controls may also switch between the +BATT voltage and ground but
+an active low only signal is expected and preferred when possible.
+Each connector is connected to a single bank of 4 output channels allowing each
+one to be used with a different control if needed though a single control
+connected to and controlling both is the expected configuration.
+
+Additionally the connectors can each be used to supply power of +BATT volts at
+1A max to external circuits.
+Normally this is used to supply power to an external control boards like the
+co-designed and recommended [picow_ssr_control] or [we_ssr_control] boards.
+
+### Solid State Relays
+
+This is the main section of the circuit board and contains most of the
+components. There are 8 independent solid state relay circuits which are
+designed to work the same. The relays outputs are laid out as two banks of
+four channels each on the two longer edges of the board to allow easy access.
+A single channel will be described next since other than their position and
+names etc. the design is the same.
+
+#### Channel description
+
+The OUT1 channel will be used in this description. The switching (relay)
+component is Q1 a P-channel IRF4905 MOSFET which electrical connects the +BATT
+voltage to the output connector J1 (OUT1) when activated.
+
 ## Contributing
 
 Contributors are welcome.
@@ -78,7 +115,7 @@ Please make sure to update or add tests as appropriate for all software changes.
 
 ## Licenses
 
-![GitHub](docs/oshw_facts.svg)<br/>
+![License Facts](docs/oshw_facts.svg)<br/>
 
 All hardware is licensed under the
 
@@ -115,9 +152,12 @@ to guided you through my understanding of how it works.
 [LICENSE-CERN-OHL-W-2]: CERN-OHL-W-2
 [LICENSE-MIT]: LICENSE-MIT
 [MIT]: https://opensource.org/licenses/MIT
+[picow_ssr_control]: https://github.com/dragon-mobile/picow_ssr_control
+[we_ssr_control]: https://github.com/dragon-mobile/we_ssr_control
+
 
 <hr>
-Copyright &copy; 2022, Michael Cummings<br/>
+Copyright &copy; 2022-2023, Michael Cummings<br/>
 <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">
 <img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" />
 </a>
