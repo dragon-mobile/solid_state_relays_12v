@@ -11,7 +11,9 @@ life and maker communities.
 
 ## Visual 3D examples
 
+Top view<br/>
 ![Top view 3D rendering of the circuit board in FreeCAD](docs/solid_state_relays_12v.png "Circuit board top view")<br/>
+Bottom view<br/>
 ![Bottom view 3D rendering of the circuit board in FreeCAD](docs/solid_state_relays_12v_back.png "Circuit board bottom view")<br/>
 
 ## Description
@@ -43,7 +45,9 @@ The final part of the Power In section is the highly recommended but optional
 power applied/on LED circuit. The LEDP1 should light up any time power is
 connected to the board to give a quick visual indicator. Optionally the onboard
 LED can be replaced by connecting an external LED via the optional JP2 pin
-header. Connecting both LEDP1 and an external LED is not recommended.
+header. Connecting both LEDP1 and an external LED is not recommended. R1 is the
+current limiting resistor for the LED and can be replaced with 0Ω one when
+an external resistor is used on the JP2 circuit.
 By cutting the trace between the pads of JP1 the indicator circuit can be
 disabled. Additionally by doing this and soldering two leads to the pads an
 external switch could be used to turn the indicator on and off as needed.
@@ -57,6 +61,8 @@ board copper plating to 3oz (105μm). An alternative but not recommended and
 more risky way to increase current capacity is by soldering some point to point
 jumper wires from near the power connectors and the center lead of the output
 FETs and from the output of the FETs to the leads of the output connectors.
+
+TVSP2 is the only surface mount component on the bottom side of the board.
 
 ### Control In / Power Out
 
@@ -88,7 +94,48 @@ names etc. the design is the same.
 
 The OUT1 channel will be used in this description. The switching (relay)
 component is Q1 a P-channel IRF4905 MOSFET which electrical connects the +BATT
-voltage to the output connector J1 (OUT1) when activated.
+voltage to the output connector J1 (OUT1) when activated. The pullup resistor
+RP1 keeps the FET off when there is no low input driving the gate via the
+control input from the a1 pin of the JCNTL1 connector. The expected control
+input is a open drain (collector) output which only actively drives the input
+to ground and allows its output to float otherwise.
+
+*Note* that Q1 is mounted on the bottom side of the board and bent over to
+allow easy attachment to a large heat sink which is required. Look at the
+picture of the bottom of the board in the Visual 3D examples section of this
+README to better understand what it looks like when bent over to mounting.
+
+** WARNING ** the metal tab and back of Q1 are at +BATT and need to be
+electrically isolated from the heat sink if it is grounded while still
+maintaining a good thermal contact.
+
+The output is protected from most high voltage and reverse voltage spikes by
+TVS1 a unidirectional Transient-Voltage-Suppression diode. It is mostly there
+to protect against ESD and the voltage spikes commonly seens when switch off
+inductive loads which could damage Q1 if they exceeded its own internal
+protections.
+
+The final three components: RL1, LED1, and the optional JL1 provide a quick
+visual indicator for when the output is active. RL1 is the current limiting
+resistor for the LED. Like with the power indicator circuit the indicator
+circuit is all optional but highly recommended. When an LED is connected via
+JL1 the internal LED should not be used.
+
+### Mounting Holes
+
+A US letter sized mounting template can be found in [MountingTemplate].
+
+In a typical application the board will be mounted with brass or stainless
+steel standoff which are tapped into a vertical aluminum, copper, or brass
+backplate which also acts as the heat sink for the output FETs and all of
+this is inside of a larger electrical enclosure or cabinet.
+The mounting holes are sized for M3 hex (preferred) or round Male-Female ended
+standoffs which should be 10mm high to allow the correct mounting of the output
+FETs.
+The [picow_ssr_control] and [we_ssr_control] boards have been designed to mount
+directly on top of / in front of this board with additional 20mm M-F standoffs
+which would replace the normal M3 panhead screws used to secure the board at
+H1, H4, and H5.
 
 ## Contributing
 
@@ -115,7 +162,7 @@ Please make sure to update or add tests as appropriate for all software changes.
 
 ## Licenses
 
-![License Facts](docs/oshw_facts.svg)<br/>
+![Open Source License Facts](docs/oshw_facts.svg "Open Source License Facts")<br/>
 
 All hardware is licensed under the
 
@@ -152,6 +199,7 @@ to guided you through my understanding of how it works.
 [LICENSE-CERN-OHL-W-2]: CERN-OHL-W-2
 [LICENSE-MIT]: LICENSE-MIT
 [MIT]: https://opensource.org/licenses/MIT
+[MountingTemplate]: docs/MountingTemplate.pdf
 [picow_ssr_control]: https://github.com/dragon-mobile/picow_ssr_control
 [we_ssr_control]: https://github.com/dragon-mobile/we_ssr_control
 
