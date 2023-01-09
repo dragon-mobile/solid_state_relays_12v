@@ -145,12 +145,14 @@ H1, H4, and H5.
 The last mechanical section are the access holes that were added to make
 mounting the FET to an underlaying heat sink easier. They can also be found
 on the [MountingTemplate]. On the template you will see outlines for a
-typical silicone insulators. *Note* one top corner of the HQ2 and HQ6
-insulators may interfere with mounting hole H5 and need to be trimmed back or
-bent up a little if flexible enough to allow complete tighten of the standoff
-and not cause the board to bow up in the middle. By using a magnetic
-screwdriver you should be able to pass the screw, lock, and plastic
-shoulder washers through the holes in the board and FET to be tighten down.
+typical silicone insulators.
+
+*Note* one top corner of the HQ2 and HQ6 insulators may interfere with mounting
+hole H5 and need to be trimmed back or bent up a little if flexible enough to
+allow complete tighten of the standoff and not cause the board to bow up in the
+middle. By using a magnetic screwdriver you should be able to pass the screw,
+lock, and plastic shoulder washers through the holes in the board and FET to be
+tighten down.
 A little silicone or thermal grease can help keep the washers in place without
 cause other issues.
 
