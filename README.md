@@ -132,8 +132,10 @@ this is inside of a larger electrical enclosure or cabinet.
 The mounting holes are sized for M3 hex (preferred) or round Male-Female ended
 standoffs which should be 5-10mm high to allow the correct mounting of the
 output FETs. the shortest standoff that doesn't cause the body to contact the
-board and allow the legs to be bent at a right angle just pass the "neck".
-In most cases this should be 5-6mm high but can end up as high as 10mm.
+board and allow the legs to be bent at a right angle just pass the "neck" is
+best.
+In most cases this should be 5-6mm high but can end up as high as 10mm
+depending on the insulators used.
 
 The [picow_ssr_control] and [we_ssr_control] boards have been designed to mount
 directly on top of / in front of this board with additional 20mm M-F standoffs
