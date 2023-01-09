@@ -656,7 +656,7 @@
       "netlist": "",
       "specctra_dsn": "",
       "step": "solid_state_relays_12v.step",
-      "vrml": ""
+      "vrml": "solid_state_relays_12v.wrl"
     },
     "page_layout_descr_file": ""
   },
