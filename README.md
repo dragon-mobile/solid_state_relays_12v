@@ -130,12 +130,29 @@ steel standoff which are tapped into a vertical aluminum, copper, or brass
 backplate which also acts as the heat sink for the output FETs and all of
 this is inside of a larger electrical enclosure or cabinet.
 The mounting holes are sized for M3 hex (preferred) or round Male-Female ended
-standoffs which should be 10mm high to allow the correct mounting of the output
-FETs.
+standoffs which should be 5-10mm high to allow the correct mounting of the
+output FETs. the shortest standoff that doesn't cause the body to contact the
+board and allow the legs to be bent at a right angle just pass the "neck".
+In most cases this should be 5-6mm high but can end up as high as 10mm.
+
 The [picow_ssr_control] and [we_ssr_control] boards have been designed to mount
 directly on top of / in front of this board with additional 20mm M-F standoffs
-which would replace the normal M3 panhead screws used to secure the board at
+which would replace the normal M3 pan head screws used to secure the board at
 H1, H4, and H5.
+
+### MOSFET Mounting Access Holes
+
+The last mechanical section are the access holes that were added to make
+mounting the FET to an underlaying heat sink easier. They can also be found
+on the [MountingTemplate]. On the template you will see outlines for a
+typical silicone insulators. *Note* one top corner of the HQ2 and HQ6
+insulators may interfere with mounting hole H5 and need to be trimmed back or
+bent up a little if flexible enough to allow complete tighten of the standoff
+and not cause the board to bow up in the middle. By using a magnetic
+screwdriver you should be able to pass the screw, lock, and plastic
+shoulder washers through the holes in the board and FET to be tighten down.
+A little silicone or thermal grease can help keep the washers in place without
+cause other issues.
 
 ## Contributing
 
