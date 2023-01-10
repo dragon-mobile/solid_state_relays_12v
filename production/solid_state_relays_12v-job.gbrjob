@@ -5,13 +5,13 @@
       "Application": "Pcbnew",
       "Version": "(6.0.10)"
     },
-    "CreationDate": "2023-01-04T08:24:49-08:00"
+    "CreationDate": "2023-01-10T09:29:53-08:00"
   },
   "GeneralSpecs": {
     "ProjectId": {
       "Name": "solid_state_relays_12v",
       "GUID": "736f6c69-645f-4737-9461-74655f72656c",
-      "Revision": "0.0.7"
+      "Revision": "0.0.8"
     },
     "Size": {
       "X": 100.01,
