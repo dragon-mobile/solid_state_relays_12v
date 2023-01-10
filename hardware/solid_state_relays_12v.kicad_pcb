@@ -8,7 +8,7 @@
   (title_block
     (title "Solid State Relays 12V")
     (date "2023-01-10")
-    (rev "0.0.8")
+    (rev "0.0.9")
     (comment 2 "creativecommons.org/licenses/by/4.0/")
     (comment 3 "License: CC By 4.0")
     (comment 4 "Author: Michael Cummings")
@@ -8799,7 +8799,7 @@
   (gr_text "Solid State Relay Bank A [1-4]" (at 75 45) (layer "F.SilkS") (tstamp 8f9f4d41-45bd-4401-8e89-c51924f8fb0f)
     (effects (font (size 2 2) (thickness 0.3)))
   )
-  (gr_text "v0.0.8" (at 16 92.5) (layer "F.SilkS") (tstamp 9403f36f-d12a-458f-9ba6-a5b33784e704)
+  (gr_text "v0.0.9" (at 16 92.5) (layer "F.SilkS") (tstamp 9403f36f-d12a-458f-9ba6-a5b33784e704)
     (effects (font (size 1.5 1.5) (thickness 0.25)) (justify left))
   )
   (gr_text "+BATT\n a1\n a2\n a3\n a4" (at 109.65 35.85) (layer "F.SilkS") (tstamp cb7acb33-cebf-4054-9dc0-88df4033b029)
