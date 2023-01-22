@@ -655,7 +655,7 @@
       "idf": "solid_state_relays_12v.emn",
       "netlist": "",
       "specctra_dsn": "",
-      "step": "solid_state_relays_12v.step",
+      "step": "../cad/solid_state_relays_12v.step",
       "vrml": "solid_state_relays_12v.wrl"
     },
     "page_layout_descr_file": ""
