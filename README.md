@@ -41,6 +41,12 @@ the power source. Additionally they can act as reverse polarity protection by
 shorting the incorrectly wiring source and blow its fuse. Care should be taken
 to ensure the 12 volt wire is properly fused.
 
+The two optional fan connectors: M1 and M2 are avalible to add optional cooling
+fans which are always on or use external temperature / speed control.
+If enclosed in a tight fitting case or cover it's recommended that at least one
+fan be used to prevent hot spots that can cause premature component failure or
+in extereme cases fires.
+
 The final part of the Power In section is the highly recommended but optional
 power applied/on LED circuit. The LEDP1 should light up any time power is
 connected to the board to give a quick visual indicator. Optionally the onboard
@@ -103,7 +109,7 @@ to ground and allows its output to float otherwise.
 *Note* that Q1 is mounted on the bottom side of the board and bent over to
 allow easy attachment to a large heat sink which is required. Look at the
 picture of the bottom of the board in the Visual 3D examples section of this
-README to better understand what it looks like when bent over to mounting.
+README to better understand what it looks like when bent over for mounting.
 
 ** WARNING ** the metal tab and back of Q1 are at +BATT and need to be
 electrically isolated from the heat sink if it is grounded while still
