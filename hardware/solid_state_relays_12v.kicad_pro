@@ -379,10 +379,19 @@
         "line_style": 0,
         "microvia_diameter": 0.3,
         "microvia_drill": 0.1,
-        "name": "GND_PassThru",
-        "nets": [],
+        "name": "Control",
+        "nets": [
+          "/Control In - Power Out/BANK_A.CNTL1",
+          "/Control In - Power Out/BANK_A.CNTL2",
+          "/Control In - Power Out/BANK_A.CNTL3",
+          "/Control In - Power Out/BANK_A.CNTL4",
+          "/Control In - Power Out/BANK_B.CNTL5",
+          "/Control In - Power Out/BANK_B.CNTL6",
+          "/Control In - Power Out/BANK_B.CNTL7",
+          "/Control In - Power Out/BANK_B.CNTL8"
+        ],
         "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "schematic_color": "rgb(255, 255, 0)",
         "track_width": 0.25,
         "via_diameter": 0.8,
         "via_drill": 0.4,
@@ -591,7 +600,7 @@
           "OUT8"
         ],
         "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "schematic_color": "rgb(255, 255, 0)",
+        "schematic_color": "rgb(255, 170, 0)",
         "track_width": 0.25,
         "via_diameter": 0.8,
         "via_drill": 0.4,
@@ -627,15 +636,7 @@
         "microvia_diameter": 0.3,
         "microvia_drill": 0.1,
         "name": "Signal",
-        "nets": [
-          "/a1",
-          "/a2",
-          "/a3",
-          "/a4",
-          "/a5",
-          "/a6",
-          "/a7"
-        ],
+        "nets": [],
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.25,
@@ -702,6 +703,22 @@
     [
       "0a5a4333-0d12-4d4e-9efe-03f976319aea",
       ""
+    ],
+    [
+      "4223877a-f0b6-4f15-8613-23d3b27ad879",
+      "Power In"
+    ],
+    [
+      "f959b92a-ce61-4a7b-95ea-6ec04a3753cc",
+      "Control In - Power Out"
+    ],
+    [
+      "f8ae6d4d-7a26-4f24-b773-fe0ae5d07268",
+      "Solid State Relays - Bank A"
+    ],
+    [
+      "9aae0e2a-06c5-4008-ba6f-da2f507b83a6",
+      "Solid State Relays - Bank B"
     ]
   ],
   "text_variables": {}
