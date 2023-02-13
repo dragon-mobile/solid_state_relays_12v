@@ -1331,7 +1331,7 @@
     (property "Sheet file" "ssr_bank_b.kicad_sch" (id 1) (at 142.24 90.2466 0)
       (effects (font (size 1.27 1.27)) (justify left top))
     )
-    (pin "BANK_B{CNTL[5..8]}" input (at 142.24 73.66 180)
+    (pin "BANK_B{OUT[5..8]}" input (at 142.24 73.66 180)
       (effects (font (size 1.27 1.27)) (justify left))
       (uuid e6b87027-e487-4dd3-8ad0-2950d62c7ad2)
     )
@@ -1351,7 +1351,7 @@
     (property "Sheet file" "ssr_bank_a.kicad_sch" (id 1) (at 142.24 60.0206 0)
       (effects (font (size 1.27 1.27)) (justify left top))
     )
-    (pin "BANK_A{CNTL[1..4]}" input (at 142.24 53.34 180)
+    (pin "BANK_A{OUT[1..4]}" input (at 142.24 53.34 180)
       (effects (font (size 1.27 1.27)) (justify left))
       (uuid 4d17d1af-3d81-4ec3-af5f-e3d231356dc3)
     )
@@ -1371,11 +1371,11 @@
     (property "Sheet file" "control_in.kicad_sch" (id 1) (at 83.82 76.7846 0)
       (effects (font (size 1.27 1.27)) (justify left top))
     )
-    (pin "BANK_B{CNTL[5..8]}" output (at 121.92 73.66 0)
+    (pin "BANK_B{OUT[5..8]}" output (at 121.92 73.66 0)
       (effects (font (size 1.27 1.27)) (justify right))
       (uuid 63f5ee59-0192-4d1f-8b64-ceba69e45773)
     )
-    (pin "BANK_A{CNTL[1..4]}" output (at 121.92 53.34 0)
+    (pin "BANK_A{OUT[1..4]}" output (at 121.92 53.34 0)
       (effects (font (size 1.27 1.27)) (justify right))
       (uuid a8b812df-7de2-460f-9d64-7a3c4b58395e)
     )
@@ -1553,32 +1553,32 @@
     (path "/4223877a-f0b6-4f15-8613-23d3b27ad879/92b5eb65-5fa6-48b8-9255-ae0a0cd73b46"
       (reference "JPWR2") (unit 1) (value "XT60PW-M") (footprint "dragon_mobile:XT60PWM")
     )
+    (path "/4223877a-f0b6-4f15-8613-23d3b27ad879/98df94df-9072-4d30-8bf8-f0de70bd3c38"
+      (reference "LP1") (unit 1) (value "LTST-C190KGKT") (footprint "dragon_mobile:LEDC1608X80N")
+    )
     (path "/f8ae6d4d-7a26-4f24-b773-fe0ae5d07268/a42411c5-99ce-4df7-a163-79a2fe583b5d"
-      (reference "LED1") (unit 1) (value "LTST-C190KFKT") (footprint "dragon_mobile:LEDC1607X80N")
+      (reference "LT1") (unit 1) (value "LTST-C190KFKT") (footprint "dragon_mobile:LEDC1607X80N")
     )
     (path "/f8ae6d4d-7a26-4f24-b773-fe0ae5d07268/af1a8689-fd14-4e6d-8121-0bcb7b1e9b4b"
-      (reference "LED2") (unit 1) (value "LTST-C190KFKT") (footprint "dragon_mobile:LEDC1607X80N")
+      (reference "LT2") (unit 1) (value "LTST-C190KFKT") (footprint "dragon_mobile:LEDC1607X80N")
     )
     (path "/f8ae6d4d-7a26-4f24-b773-fe0ae5d07268/07c70024-2563-419d-9d20-8731970eb9c7"
-      (reference "LED3") (unit 1) (value "LTST-C190KFKT") (footprint "dragon_mobile:LEDC1607X80N")
+      (reference "LT3") (unit 1) (value "LTST-C190KFKT") (footprint "dragon_mobile:LEDC1607X80N")
     )
     (path "/f8ae6d4d-7a26-4f24-b773-fe0ae5d07268/e6189137-bded-45c9-8a2d-c03c9bb00a13"
-      (reference "LED4") (unit 1) (value "LTST-C190KFKT") (footprint "dragon_mobile:LEDC1607X80N")
+      (reference "LT4") (unit 1) (value "LTST-C190KFKT") (footprint "dragon_mobile:LEDC1607X80N")
     )
     (path "/9aae0e2a-06c5-4008-ba6f-da2f507b83a6/8bcbf4ff-74bf-48f3-9858-b163c117f21e"
-      (reference "LED5") (unit 1) (value "LTST-C190KFKT") (footprint "dragon_mobile:LEDC1607X80N")
+      (reference "LT5") (unit 1) (value "LTST-C190KFKT") (footprint "dragon_mobile:LEDC1607X80N")
     )
     (path "/9aae0e2a-06c5-4008-ba6f-da2f507b83a6/57132f61-2128-4144-9b03-bd0d018e3901"
-      (reference "LED6") (unit 1) (value "LTST-C190KFKT") (footprint "dragon_mobile:LEDC1607X80N")
+      (reference "LT6") (unit 1) (value "LTST-C190KFKT") (footprint "dragon_mobile:LEDC1607X80N")
     )
     (path "/9aae0e2a-06c5-4008-ba6f-da2f507b83a6/694a1507-4e9e-41d3-b13b-11b431b27bf2"
-      (reference "LED7") (unit 1) (value "LTST-C190KFKT") (footprint "dragon_mobile:LEDC1607X80N")
+      (reference "LT7") (unit 1) (value "LTST-C190KFKT") (footprint "dragon_mobile:LEDC1607X80N")
     )
     (path "/9aae0e2a-06c5-4008-ba6f-da2f507b83a6/d46e7bc8-9768-4016-81b1-b9a09b537892"
-      (reference "LED8") (unit 1) (value "LTST-C190KFKT") (footprint "dragon_mobile:LEDC1607X80N")
-    )
-    (path "/4223877a-f0b6-4f15-8613-23d3b27ad879/98df94df-9072-4d30-8bf8-f0de70bd3c38"
-      (reference "LEDP1") (unit 1) (value "LTST-C190KGKT") (footprint "dragon_mobile:LEDC1608X80N")
+      (reference "LT8") (unit 1) (value "LTST-C190KFKT") (footprint "dragon_mobile:LEDC1607X80N")
     )
     (path "/4223877a-f0b6-4f15-8613-23d3b27ad879/4843324d-65d7-40e8-acb1-eb41210186e8"
       (reference "M1") (unit 1) (value "Fan") (footprint "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical")
