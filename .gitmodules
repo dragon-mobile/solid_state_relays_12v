@@ -1,0 +1,3 @@
+[submodule "hardware/shared_components"]
+	path = hardware/shared_components
+	url = https://github.com/dragon-mobile/shared_components.git
